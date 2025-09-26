@@ -1,7 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: #456882;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.main-section {
+    margin-top: 75px;
+}
+
+.main-section p, .main-section li {
+    margin-top: 20px;
+}
+
+.main-sections {
+    width: 50%;
+    margin: auto;
+}
+
+.main-sections header {
+    background-color: #234C6A;
+    padding: 5px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Reference a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-section h1 {
+    border-bottom: 2px solid white;
+}
+
 #main-doc {
-  
+    margin: 0;
+    padding: 0;
 }
 
 #main-section {
   
 }
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #234C6A !important;
+    height: 100%;
+    width: 20%;
+}
+
+#navbar * {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#navbar header {
+    display: block;
+    margin: 20px auto;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 10px;
+}
+
+#navbar li {
+    padding: 10px;
+    width: 80%;
+    text-align: left;
+    margin: auto;
+}
+
+#navbar li:hover {
+    background-color: #1B3C53;
+}
+
+#navbar h1 {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+code, pre {
+    font-family: monospace;
+}   
